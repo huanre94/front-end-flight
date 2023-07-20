@@ -13,4 +13,10 @@ export const useAppStore = defineStore('app', {
       { id: 6, airline: 'Latam', duration: 0.5, stopover: 0, price: 100 }
     ]
   }),
+  getters: {
+
+  },
+  actions: {
+
+  }
 })
