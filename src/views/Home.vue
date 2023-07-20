@@ -1,5 +1,6 @@
 <template>
-  <HelloWorld />
+  <!-- <HelloWorld /> -->
+  <div>Landing page</div>
 </template>
 
 <script setup>
