@@ -1,22 +1,16 @@
 <template>
   <v-app>
-    <default-bar />
-    <button @click="increment">
-      {{ count }}
-    </button>
+    <default-bar @toggle-drawer="drawer = !drawer" />
+    <default-sidebar v-model="drawer" />
     <default-view />
   </v-app>
 </template>
 
 <script setup>
+import { ref } from 'vue'
 import DefaultBar from './AppBar.vue'
 import DefaultView from './View.vue'
+import DefaultSidebar from '@/components/Sidebar.vue'
 
-import { ref } from 'vue';
-
-const count = ref(0)
-
-function increment(){
-  count.value++
-}
+const drawer = ref(true)
 </script>
